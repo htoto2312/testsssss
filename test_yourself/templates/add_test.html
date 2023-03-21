@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+<form action="{{ url_for('add_test') }}" method="post">
+    <h3>Add new test</h3>
+
+    <label for="question">Question</label>
+    <input type="text" id="question" name="question"/><br>
+
+    <label for="ans1">First</label>
+    <input type="text" id="ans1" name="ans1"/><br>
+
+    <label for="ans2">Question</label>
+    <input type="text" id="ans2" name="ans2"/><br>
+
+    <label for="correct">correct answer</label>
+    <input type="text" id="correct" name="correct"/><br>
+
+    <input type="submit" id="Submit"/><br>
+</form>
+{% endblock %}
